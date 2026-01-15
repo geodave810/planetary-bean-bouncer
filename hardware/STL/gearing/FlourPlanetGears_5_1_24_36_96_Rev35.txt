@@ -1,0 +1,2 @@
+Based on "Planetary Gear Set" (Thingiverse Thing 53451).
+Modified for use in the Planetary Bean Bouncer project.
