@@ -1,0 +1,46 @@
+Planetary Bean Bouncer BOM,QTY,Item,Notes,Optional / Fabrication Notes, Unit Price , Extended Price ,Link
+,,,,,,,
+,1,Heat Gun,,, $28.99 , $28.99 ,https://www.amazon.com/dp/B07DX4PL1M?ref=ppx_yo2ov_dt_b_fed_asin_title
+,1,8 Cup SS Flour Sifter,,, $23.99 , $23.99 ,https://www.amazon.com/dp/B0DD3ZB6MT?th=1
+,4,2040 V-Groove 500mm (You could also use T-Slot),,, $10.08 , $40.32 ,"2040 V-Groove Extrusion Pre-cut lengths 300mm-2000mm - ZYLtech Engineering, LLC"
+,1,2040 V-Groove 300mm (You could also use T-Slot),,, $6.95 , $6.95 ,"2040 V-Groove Extrusion Pre-cut lengths 300mm-2000mm - ZYLtech Engineering, LLC"
+,1,1602 LCD Display with Backpack,,, $8.99 , $8.99 , https://www.amazon.com/dp/B0D2L9SK1P?th=1 
+,1,Arduino Uno + CNC shield + DRV8825,,, $18.99 , $18.99 ,https://www.amazon.com/DAOKI-Expansion-Arduino-Heatsink-Engraving/dp/B08KFYKKN4
+,1,"5""-7"" SS Band Clamp",,, $3.99 , $3.99 ,"I bought mine from ACE hardware, too expensive from Amazon"
+,1,24 - 18x18x30 L Brackets (4 needed),,, $7.99 , $7.99 ,https://www.amazon.com/dp/B09G9GKFPT?th=1
+,1,M5 fender washers (pack of 50) only 12 needed,,, $7.99 , $7.99 ,https://www.amazon.com/dp/B0CLK7J4NB?th=1
+,4,M3x25mm (LCD Case),,, $0.12 , $0.48 ,https://boltdepot.com/Product-Details?product=15291
+,8,M3x10mm (Arduino Mount and Motor Mount),,, $0.08 , $0.64 ,https://boltdepot.com/Product-Details?product=7220
+,8,M3 Locknuts (Not needed on Motor Mount),,, $0.07 , $0.56 ,https://boltdepot.com/Product-Details?product=4792
+,1,M5x12mm screws  about 72 needed (Pack of 100),,, $8.60 , $8.60 ,https://boltdepot.com/Product-Details?product=6633
+,1,M5 Tee Nuts about 72 needed(Pack of 100),,, $7.95 , $7.95 ,https://www.amazon.com/Kangsiyu-Aluminum-Profile-Printer-Accessory/dp/B0FQ3P1GF3/141-9617972-1494545?th=1
+,2,M5x25mm screws (top of Planetary Gear),,, $0.24 , $0.48 ,https://boltdepot.com/Product-Details?product=6636
+,3,M5x35mm screws (Planets to Planet carrier),,, $0.32 , $0.96 ,https://boltdepot.com/Product-Details?product=6638
+,1,625-2RS bearings (12 pack) (planet bearings only 6 needed),,, $8.99 , $8.99 ,https://www.amazon.com/%EF%BC%BB12-Pack%EF%BC%BD625-2RS-Ball-Bearings-Miniature/dp/B0BRQP2QG7?th=1
+,3,M5 washers (planet bearings),The washers I used were precision washers,, $0.05 , $0.15 ,https://boltdepot.com/Product-Details?product=4515
+,,,from openbuilds if you can find them,,,,
+,8,M5 locknuts,,, $0.09 , $0.72 ,https://boltdepot.com/Product-Details?product=4794
+,3,M5x50mm screws for controller case,,, $0.56 , $1.68 ,https://boltdepot.com/Product-Details?product=6641
+,,,,,,,
+,Parts for optional 3D printed wobble disc,,,,,,
+,QTY,Item,Notes,, Unit Price , Extended Price ,Link
+,1,3D printed 316L Wobble Disc,,See Sweet Maria’s wobble disc fabrication guide (link in README).,$55 , $55.00 ,Best price I found was from https://app.prototi.com/quote
+,,,,,,,
+,1,4 Pcs M5x200mm 304 SS Threaded Rod (only 1 needed),,, $7.99 , $7.99 ,https://www.amazon.com/dp/B09LGXG6F1?th=1
+,2,M5 External tooth SS washers,,, $0.06 , $0.12 ,https://boltdepot.com/Product-Details?product=7121
+,4,M5 serrated flange nuts SS,,, $0.22 , $0.88 ,https://boltdepot.com/Product-Details?product=12008
+,4,"M5 Hex Nuts (Use 4mm wide nuts, NOT narrow jam nut)",Narrow jam nuts make it more difficult to get wrench on,, $0.07 , $0.28 ,https://boltdepot.com/Product-Details?product=4775
+,,,both nuts,,,,
+,1,M5x18mm long SS spacers,Not completely necessary but covers more of threaded rod,, $9.69 , $9.69 ,https://www.amazon.com/dp/B0F8QPGNJL?
+,1,10 pack of 5mm Bore shaft lock collars SS (only 1 needed),These do not have to be SS since they are outside sifter,, $7.88 , $7.88 ,https://www.amazon.com/dp/B0F5TFX6PL?th=1
+,1,"5mm bore motor hex coupler, M4 threads on opposite side",Connects Motor to Sun gear and planets to main shaft,, $7.99 , $7.99 ,https://www.amazon.com/dp/B08M379TCT?th=1
+,2,M4 x25mm SS tap bolts,These connect planetary gear to M4 bore of hex couple on,, $0.19 , $0.38 ,https://boltdepot.com/Product-Details?product=5940
+,,,each side of the gear.,,,,
+,,,you might want to get a couple of 20mm & 30mm length,,,,
+,,,in case those lengths work better for you.,,,,
+,2,M4 Locknut SS,,, $0.08 , $0.16 ,https://boltdepot.com/Product-Details?product=4793
+,2,M4 Lock washers SS,,, $0.07 , $0.14 ,https://boltdepot.com/Product-Details?product=4811
+,,,,,,,
+,,Estimated total (author’s build):,,,, $234.27 ,
+,,Prices are approximate and reflect the author’s build at the time of writing.,,,,,
+,,,,,,,
