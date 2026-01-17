@@ -111,3 +111,11 @@ https://forum.v1e.com/t/diy-coffee-roaster/51195
 
 These resources provide additional context beyond what is captured
 in the repository files.
+
+## Build guide
+
+A step-by-step mechanical build guide is available in the `docs/` directory.
+This guide covers frame construction, drive components, and flour sifter
+integration.
+
+Electronics integration will be documented separately.
