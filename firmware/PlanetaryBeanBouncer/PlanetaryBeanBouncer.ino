@@ -1,14 +1,21 @@
 /*
- * Planetary Bean Bouncer Coffee Roaster Controller Firmware
- *
- * Author: David Bunch
- * Date: 01/08/2026
- *
- * License: MIT
- * Portions of this code were developed with the assistance of AI-based
- * code generation tools and subsequently reviewed, tested, and modified
- * by the author.
- */
+ ===============================
+  Planetary Bean Bouncer Firmware
+ ===============================
+
+ Version:       v0.1.1
+ Release date:  2026-01-26
+ Author:        David Bunch
+ License:       MIT (firmware) / CC-BY-NC (hardware)
+ Repository:    https://github.com/geodave810/planetary-bean-bouncer
+ Description:   DIY coffee roaster controller using a single-motor flour sifter
+*/
+
+// ==============================
+// Firmware Version
+// ==============================
+#define FW_NAME        "Planetary Bean Bouncer"
+#define FW_VERSION     "v0.1.1"
 
 #include <Wire.h>
 #include <LiquidCrystal_I2C.h>
@@ -72,6 +79,13 @@ MAX6675 tc1(TC1_SCK, TC1_CS, TC1_SO);
 float TEMP_BEEP_2F = 250.0;   // double beep
 float TEMP_BEEP_3F = 275.0;   // triple beep
 float TEMP_REARM_HYST_F = 5.0;  // must cool this much below threshold to re-arm
+
+// ==============================
+// Thermocouple calibration
+// ==============================
+// Positive value = TC reads low, Negative = TC reads high
+// Your TC reads ~4°F high → subtract 4°F
+const float TC1_OFFSET_F = -4.0;
 
 unsigned long lastTempSampleMs = 0;
 const unsigned long TEMP_SAMPLE_MS = 200; // 5 Hz (adjust 100–500ms)
@@ -286,6 +300,14 @@ void confirmBeep() {
   tone(BUZZER_PIN, 1800, 200);
 }
 
+inline float applyTC1Offset(float value, bool isFahrenheit) {
+  if (isFahrenheit) {
+    return value + TC1_OFFSET_F;
+  } else {
+    return value + (TC1_OFFSET_F * 5.0 / 9.0);
+  }
+}
+
 // ==============================
 // Thermocouple reading
 // ==============================
@@ -293,7 +315,9 @@ void confirmBeep() {
 float readTC1_F() {
   double c = tc1.readCelsius();
   if (isnan(c)) return NAN;
-  return (float)((c * 9.0 / 5.0) + 32.0);
+
+  float f = (c * 9.0 / 5.0) + 32.0;
+  return applyTC1Offset(f, true);
 }
 
 // Read TC1 in current display units for LCD (int). -999 = invalid
@@ -302,10 +326,12 @@ int readTC1_displayUnits() {
   if (isnan(c)) return -999;
 
   if (tempUnitsF) {
-    double f = (c * 9.0 / 5.0) + 32.0;
+    float f = (c * 9.0 / 5.0) + 32.0;
+    f = applyTC1Offset(f, true);
     return (int)(f + 0.5);
   } else {
-    return (int)(c + 0.5);
+    float cf = applyTC1Offset((float)c, false);
+    return (int)(cf + 0.5);
   }
 }
 
@@ -385,9 +411,9 @@ void setup() {
   #if SHOW_STARTUP_BANNER
     lcd.clear();
     lcd.setCursor(0, 0);
-    lcd.print("Planetary Bean");
+    lcd.print(FW_NAME);
     lcd.setCursor(0, 1);
-    lcd.print("Bouncer v0.1.0");
+    lcd.print(FW_VERSION);
 
     bannerStartTime = millis();
   #endif
