@@ -75,7 +75,7 @@ substitutions, and existing inventory.
 
 ### Fabricating Your Own Wobble Disc
 
-Builders who prefer to machine or fabricate their own wobble disc rather than purchase one can follow detailed instructions from Sweet Maria’s:
+For builders interested in fabricating their own wobble disc rather than purchasing one, a detailed fabrication guide that inspired this approach is available here:
 
 - **Wobble Disc Fabrication Guide**  
   https://library.sweetmarias.com/wp-content/uploads/2024/09/Wobble-Disc-Coffee-Roaster-3-red-tubes-model-build-instructions.pdf

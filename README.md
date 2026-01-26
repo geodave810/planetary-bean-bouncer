@@ -55,7 +55,7 @@ and will be expanded over time as the design evolves.
 > Motor and driver wiring is intentionally not prescribed, as there are many
 valid configurations depending on hardware choices.
 
-For builders interested in fabricating their own wobble disc rather than purchasing one, a detailed fabrication guide is available here:
+For builders interested in fabricating their own wobble disc rather than purchasing one, a detailed fabrication guide that inspired this approach is available here:
 
 https://library.sweetmarias.com/wp-content/uploads/2024/09/Wobble-Disc-Coffee-Roaster-3-red-tubes-model-build-instructions.pdf
 
@@ -119,3 +119,9 @@ This guide covers frame construction, drive components, and flour sifter
 integration.
 
 Electronics integration will be documented separately.
+
+## FAQ
+
+Common questions about build difficulty, food safety, and project scope are answered here:
+
+➡️ [docs/FAQ.md](docs/FAQ.md)
