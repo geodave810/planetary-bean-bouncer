@@ -1,6 +1,6 @@
 # Planetary Bean Bouncer
 
-![Planetary Bean Bouncer overview](media/photos/planetary_bean_bouncer_overview_IMG_6010.jpg)
+![Planetary Bean Bouncer overview](media/photos/planetary_bean_bouncer_overview_IMG_6095.jpg)
 
 Open-source DIY coffee roaster project based on an 8-cup flour sifter with a
 stationary heat gun and a rotating agitator, controlled by Arduino-based firmware.
