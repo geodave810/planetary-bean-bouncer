@@ -43,6 +43,8 @@ Planetary Bean Bouncer assembly.
 
 All original licensing terms of the upstream design are respected.
 
+See /docs/tolerance-test-prints.md for optional test prints.
+
 ## Bill of Materials (BOM)
 
 A bill of materials is provided in the `BOM/` directory as an Excel

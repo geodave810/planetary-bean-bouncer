@@ -37,6 +37,17 @@ and will be expanded over time as the design evolves.
 - `wiring/` — Basic UI wiring reference (Fritzing)
 - `media/` — Photos and videos
 
+## Fit & Tolerance Test Prints
+
+Two optional test STLs are included to verify printer tolerances before printing any main parts:
+
+- **hardware/STL/accessories/Test_1.stl** – Verifies screw, nut, bearing, and lever-lock electrical terminal fits.
+- **hardware/STL/accessories/Gearing_5_1_16_24_64_Test_Rev36.stl** – A reduced-size planetary gear set using the same tolerances as the full gearbox, intended to check gear mesh and rotation (also works as a fidget).
+
+Highly recommended if your printer or filament is untested.
+
+See `docs/tolerance-test-prints.md` for details.
+
 ## Quick start
 1. Review `hardware/README.md` for printed parts and notes
 2. Review `wiring/README.md` for the basic UI wiring reference
