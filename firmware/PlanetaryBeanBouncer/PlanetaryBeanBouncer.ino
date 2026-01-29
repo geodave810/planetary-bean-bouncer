@@ -85,7 +85,8 @@ float TEMP_REARM_HYST_F = 5.0;  // must cool this much below threshold to re-arm
 // ==============================
 // Positive value = TC reads low, Negative = TC reads high
 // Your TC reads ~4°F high → subtract 4°F
-const float TC1_OFFSET_F = -4.0;
+//const float TC1_OFFSET_F = -4.0;  // Mine temperature shows about 4 degrees too high, so I use -4.0
+const float TC1_OFFSET_F = 0.0;
 
 unsigned long lastTempSampleMs = 0;
 const unsigned long TEMP_SAMPLE_MS = 200; // 5 Hz (adjust 100–500ms)
