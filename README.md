@@ -104,6 +104,22 @@ This version provides the basic motor control and temperature monitoring functio
 - SD card storage
 - Audible alerts
 
+### Alternative ESP32-S3 Development Board
+
+The custom ESP32-S3 controller PCB is not required to build the ESP32-S3 version. During development, I also used an inexpensive 44-pin ESP32-S3 N16R8 development board with a GPIO expansion board.
+
+This provides an alternative for builders who prefer a prototype-style electronics assembly rather than manufacturing the custom controller PCB.
+
+The N16R8 version provides 16 MB flash and 8 MB PSRAM. Boards are available with either an onboard antenna or an external antenna connector.
+
+**Important compatibility note:** If you plan to install an ESP32-S3 development board directly onto the custom controller PCB, check the spacing between the two rows of header pins before purchasing. The custom PCB accommodates two pin-spacing options: 0.9 inches and 1.0 inches. Some development boards use 1.1-inch spacing and will not fit.
+
+Using a separate GPIO expansion board, like the one included with my prototype, avoids this physical spacing limitation.
+
+These development boards are available from multiple sellers and may have hardware revisions or differences in their power circuitry. My prototype required a solder-pad modification to provide 5V at the board's 5V connection, and occasionally required a second boot attempt. Verify the board's power connections and operation before incorporating it into the roaster.
+
+Follow the ESP32-S3 wiring diagram for GPIO assignments and peripheral connections. Not every development board will have identical hardware.
+
 Refer to the corresponding build documentation and bill of materials for component details, wiring, and assembly information.
 
 ## Build Guide and Bill of Materials
