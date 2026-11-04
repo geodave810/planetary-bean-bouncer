@@ -1,0 +1,41 @@
+START
+  │
+  ▼
+SETUP()
+  ├─ initLCD()
+  ├─ initButtons()
+  ├─ initStepper()
+  ├─ initTemp()
+  ├─ initTimer()
+  └─ initBuzzer()
+  │
+  ▼
+LOOP()
+  │
+  ├─ handleStepper()          ← HIGHEST PRIORITY (always fast)
+  │
+  ├─ updateButtons()
+  │     ├─ processMotorButton()
+  │     ├─ processRpmButton()
+  │     ├─ processProfileButton()
+  │     └─ processTimerButton()
+  │
+  ├─ updateTemperature()
+  │     ├─ (every 200ms)
+  │     ├─ read thermocouple
+  │     └─ check alerts
+  │
+  ├─ updateTimer()
+  │     ├─ (every 1000ms)
+  │     ├─ increment time
+  │     ├─ LED blink
+  │     └─ timer beeps
+  │
+  ├─ updateBuzzer()
+  │     └─ serviceBeepPattern()
+  │
+  ├─ updateLCD()
+  │     ├─ (every 250ms ONLY)
+  │     └─ render full screen
+  │
+  └─ LOOP repeats

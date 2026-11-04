@@ -1,0 +1,54 @@
+START
+  │
+  ▼
+SETUP()
+  ├─ Init LCD
+  ├─ Init pins (stepper, buttons, buzzer)
+  ├─ Set initial RPM
+  └─ Delay (MAX6675 settle)
+  │
+  ▼
+LOOP()
+  │
+  ├─ Show startup banner?
+  │     ├─ YES → wait → return
+  │     └─ NO → continue
+  │
+  ├─ Read all buttons (debounceRead)
+  │
+  ├─ Handle Motor Button
+  │     ├─ Toggle direction
+  │     └─ Long press → mute beeps
+  │
+  ├─ Handle RPM Button
+  │     ├─ Change preset
+  │     └─ Long press → toggle F/C
+  │
+  ├─ Handle Profile Button
+  │     ├─ Change profile
+  │     └─ Long press → reset LCD
+  │
+  ├─ Handle Timer Button
+  │     ├─ Start/Stop timer
+  │     └─ Long press → reset timer
+  │
+  ├─ Temperature Section
+  │     ├─ Sample MAX6675 (every 200ms)
+  │     ├─ Convert to °F
+  │     └─ Check alert thresholds
+  │           └─ Trigger beep pattern
+  │
+  ├─ Service Beep Pattern (non-blocking)
+  │
+  ├─ Timer Tick (every 1 sec)
+  │     ├─ Increment time
+  │     ├─ Blink LED
+  │     ├─ Minute beep
+  │     └─ 10-min beep
+  │
+  ├─ Update LCD (multiple places!)
+  │
+  ├─ Stepper Control (micros timing)
+  │     └─ Generate step pulse
+  │
+  └─ LOOP repeats
